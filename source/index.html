@@ -13,30 +13,29 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-list__item-index">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__item-photo" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__item-form" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__item-academy" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение PINK</h1>
-      <img class="page-main__top-image" src="img/top-image.svg" width="320" height="396" alt="картинка">
-      <section class="app">
+        <section class="app">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <a class="app__download" href="">Скачать приложение</a>
+        <a class="app__download" href="#"><img class="page-main__top-image" src="img/top-image.svg" width="320" height="396" alt="картинка"></a>
         <div class="app__list">
-          <a class="app__item app__item-apple" href="">Лого яблока</a>
-          <a class="app__item app__item-android" href="">Лого Андройда</a>
-          <a class="app__item app__item-windows" href="">Лого Винды</a>
+          <a class="app__item app__item-apple" href="#">Лого яблока</a>
+          <a class="app__item app__item-android" href="#">Лого Андройда</a>
+          <a class="app__item app__item-windows" href="#">Лого Винды</a>
         </div>
       </section>
       <div class="offer">
@@ -58,9 +57,9 @@
           <li class="feature__item">
             <h3 class="feature__title">Заводит новых друзей</h3>
             <p class="feature__discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <img class="feature__image" src="img/middle-image.svg" width="155" height="280" alt="Сотовый телефон">
           </li>
         </ul>
-        <img class="feature__image" src="img/middle-image.svg" width="155" height="280" alt="Сотовый телефон">
       </section>
       <section class="review">
         <div class="review__wrapper slider">
@@ -82,10 +81,10 @@
         </div>
       </section>
       <section class="tariffs">
+        <h2 class="visually-hidden">Тарифы</h2>
         <div class="tariffs__wrapper slider">
           <div class="slider__item">
-            <h2 class="visually-hidden">Тарифы</h2>
-            <div class="tariffs__package tariffs__package-hit">
+              <div class="tariffs__package tariffs__package-hit">
               <p class="tariffs__type">Стандарт</p>
               <span class="tariffs__price">3,99 USD</span>
             </div>
