@@ -13,16 +13,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item-index" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-photo" href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-form">Конкурс</a>
+            <a class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__item-academy" href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -37,94 +37,92 @@
         <div class="page-form__title">
           <p class="page-form__discription">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         </div>
-        <fieldset class="page-form__list page-form__list-name">
+        <fieldset class="page-form__list page-form__list--name">
           <label class="page-form__item">
             <span class="page-form__name">Фамилия:</span>
-            <input type="text" name="surname" placeholder="Укажите фамилию *" required>
+            <input class="page-form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
           </label>
           <label class="page-form__item">
             <span class="page-form__name">Имя:</span>
-            <input type="text" name="name" placeholder="Введите ваше имя *" required>
+            <input class="page-form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
           </label>
           <label class="page-form__item">
             <span class="page-form__name">Отчество:</span>
-            <input type="text" name="surname" placeholder="Ну и отчество тоже">
+            <input class="page-form__input" type="text" name="surname" placeholder="Ну и отчество тоже">
           </label>
         </fieldset>
-        <fieldset class="page-form__list page-form__list-achievements">
+        <fieldset class="page-form__list page-form__list--achievements">
           <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
           <ul class="achievements__list">
             <li class="achievements__item">
               <label class="achievements__check">
-                <input type="checkbox" id="check-1" name="achievements" checked>
+                <input class="achievements__input" type="checkbox" id="check-1" name="achievements" checked>
                 <span class="achievements__discription">Сделал селфи с акулой</span>
               </label>
             </li>
             <li class="achievements__item">
               <label class="achievements__check">
-                <input type="checkbox" id="check-2" name="achievements" checked>
+                <input class="achievements__input" type="checkbox" id="check-2" name="achievements" checked>
                 <span class="achievements__discription">Обгорел на пляже</span>
               </label>
             </li>
             <li class="achievements__item">
               <label class="achievements__check">
-                <input type="checkbox" id="check-3" name="achievements">
+                <input class="achievements__input" type="checkbox" id="check-3" name="achievements">
                 <span class="achievements__discription">Видел Чака Норриса</span>
               </label>
             </li>
             <li class="achievements__item">
               <label class="achievements__check">
-                <input type="checkbox" id="check-4" name="achievements">
+                <input class="achievements__input" type="checkbox" id="check-4" name="achievements">
                 <span class="achievements__discription">Накупил сувениров</span>
               </label>
             </li>
             <li class="achievements__item">
               <label class="achievements__check">
-                <input type="checkbox" id="check-5" name="achievements" checked>
+                <input class="achievements__input" type="checkbox" id="check-5" name="achievements" checked>
                 <span class="achievements__discription">Удержал башню</span>
               </label>
             </li>
             <li class="achievements__item">
               <label class="achievements__check">
-                <input type="checkbox" id="check-6" name="achievements">
+                <input class="achievements__input" type="checkbox" id="check-6" name="achievements">
                 <span class="achievements__discription">Разгромил отель</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="page-form__list page-form__list-contacts">
+        <fieldset class="page-form__list page-form__list--contacts">
           <label class="contacts__item">
             <span class="contacts__discripton">Номер телефона</span>
-            <input type="text" name="cellphone-number" placeholder="Номер, пожалуйста">
+            <input class="contacts__input" type="text" name="cellphone-number" placeholder="Номер, пожалуйста">
           </label>
           <label class="contacts__item">
             <span class="contacts__discripton">Адрес почты</span>
-            <input type="text" name="cellphone-number" placeholder="Введите почту *" required>
+            <input class="contacts__input" type="text" name="cellphone-number" placeholder="Введите почту *" required>
           </label>
         </fieldset>
-        <fieldset class="page-form__list page-form__list-apps">
+        <fieldset class="page-form__list page-form__list--apps">
           <h2 class="apps__title">С каким приложением путешествовали?</h2>
           <label class="apps__item">
             <span class="apps__discription">Pink для iOS</span>
-            <input type="radio" name="apps" id="apps_radio-1" checked>
+            <input class="apps__input"type="radio" name="apps" id="apps_radio-1" checked>
           </label>
           <label class="apps__item">
             <span class="apps__discription">Pink на Android</span>
-            <input type="radio" name="apps" id="apps_radio-2">
+            <input class="apps__input" type="radio" name="apps" id="apps_radio-2">
           </label>
           <label class="apps__item">
             <span class="apps__discription">Windows Phone</span>
-            <input type="radio" name="apps" id="apps_radio-3">
+            <input class="apps__input" type="radio" name="apps" id="apps_radio-3">
           </label>
         </fieldset>
-        <fieldset class="page-form__list page-form__list-review">
+        <fieldset class="page-form__list page-form__list--review">
           <h2 class="review__title">Опишите свои эмоции</h2>
           <textarea class="review__discription" placeholder="Можно прям в красках, не стесняясь в выражениях">
           </textarea>
         </fieldset>
-        <div class="page-form__button">
-          <input type="submit" name="send-form" value="Отправить форму">
-        </div>
+        <button class="page-form__button" type="submit" name="send-form" value="Отправить форму"></button>
       </form>
     </main>
     <footer class="page-footer">
@@ -135,13 +133,13 @@
       </div>
       <ul class="page-footer__sosial-links">
         <li>
-          <a class="page-footer__sosial-links-twitter" href="#twitter">Twitter</a>
+          <a class="page-footer__sosial-links--twitter" href="#twitter">Twitter</a>
         </li>
         <li>
-          <a class="page-footer__sosial-links-facebook" href="#facebook">Facebook</a>
+          <a class="page-footer__sosial-links--facebook" href="#facebook">Facebook</a>
         </li>
         <li>
-          <a class="page-footer__sosial-links-youtube" href="#youtube">Youtube</a>
+          <a class="page-footer__sosial-links--youtube" href="#youtube">Youtube</a>
         </li>
       </ul>
       <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive" target="blank"></a>
