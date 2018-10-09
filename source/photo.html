@@ -3,142 +3,149 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg"  width="75" height="23" alt="Приложение Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="photo-main">
-      <div class="page-title">
-        <h1 class="page-title__discription">Фотографии пользователей</h1>
-      </div>
-      <section class="pics">
-        <h2 class="visually-hidden">Фотографии пользователей</h2>
-        <p class="pics__slogan">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
-        </p>
-        <ul class="pics-review__list">
-          <li class="pics-review__item pics-review__item--panorama">
-            <img src="panorama.img" width="320" height="140" alt="панорама дня">
-            <p class="pics-review__name">Анна</p>
-            <span class="pics-review__time">(5 минут назад)</span>
-            <p class="pics-review__discription">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
-            <p class="pics-review__like">Нравиться: 215</p>
-          </li>
-          <li class="pics-review__item">
-            <img src="pic-1.img" width="280" height="180" alt="Вчера он на луну летал">
-            <p class="pics-review__name">Левон</p>
-            <span class="pics-review__time">(5 часов назад)</span>
-            <p class="pics-review__discription">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
-            <p class="pics-review__like">Нравиться: 356</p>
-          </li>
-          <li class="pics-review__item">
-            <img src="pic2.img" width="280" height="180" alt="Соседи будут рады!">
-            <p class="pics-review__name">Антон</p>
-            <span class="pics-review__time">(12 часов назад)</span>
-            <p class="pics-review__discription">Соседи будут рады!</p>
-            <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
-            <p class="pics-review__like">Нравиться: 666</p>
-          </li>
-          <li class="pics-review__item">
-            <img src="pic3.img" width="280" height="180" alt="цитата о высоком и вечном">
-            <p class="pics-review__name">Борис</p>
-            <span class="pics-review__time">(20 часов назад)</span>
-            <p class="pics-review__discription">Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
-            <p class="pics-review__like">Нравиться: 215</p>
-          </li>
-          <li class="pics-review__item">
-            <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
-            <p class="pics-review__like">Нравиться: 4</p>
-          </li>
-            <li class="pics-review__item">
-            <img src="pic5.img" width="280" height="180" alt="Где снег-то?">
-            <p class="pics-review__name">Максим</p>
-            <span class="pics-review__time">(40 часов назад)</span>
-            <p class="pics-review__discription">Где снег-то?</p>
-            <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
-            <p class="pics-review__like">Нравиться: 150</p>
-          </li>
-          <li class="pics-review__item">
-            <img src="pic6.img" width="280" height="180" alt="GM и лайки">
-            <p class="pics-review__name">Надежда</p>
-            <span class="pics-review__time">(45 часов назад)</span>
-            <p class="pics-review__discription">Всем GM и взаимные лайки!</p>
-            <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
-            <p class="pics-review__like">Нравиться: 2560</p>
-          </li>
-        </ul>
-      </section>
-      <section class="photo-form">
-        <h2 class="visually-hidden">Загрузи своё фото</h2>
-        <p class="pics-slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
-        </p>
-        <div class="photo-form__pic">
-          <img src="pic7.img" width="285" height="375" alt="фото пользователя">
-        </div>
-        <ul class="photo-form__list">
-          <li class="photo-form__item">
-            <input type="radio" id="view-filter-1" name="view-filter" checked="">
-            <label for="view-filter-1"></label>
-          </li>
-          <li class="photo-form__item">
-            <input type="radio" id="view-filter-2" name="view-filter">
-            <label for="view-filter-2"></label>
-          </li>
-          <li class="photo-form__item">
-            <input type="radio" id="view-filter-3" name="view-filter">
-            <label for="view-filter-3"></label>
-          </li>
-        </ul>
-        <div class="photo-form__toggle">
-        </div>
-        <div class="photo-form__buttons">
-          <button class="photo-form__button photo-form__button-submit" type="submit"></button>
-          <button class="photo-form__button photo-form__button-reset" type="reset"></button>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-index" href="index.html">
-          <img src="logo.svg" width="147" height="40" alt="логотип">
+    <div class="page-wrapper">
+      <header class="page-header">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Приложение Pink">
         </a>
-      </div>
-      <ul class="page-footer__sosial-links">
-        <li>
-          <a class="page-footer__sosial-links-twitter" href="#twitter">Twitter</a>
-        </li>
-        <li>
-          <a class="page-footer__sosial-links-facebook" href="#facebook">Facebook</a>
-        </li>
-        <li>
-          <a class="page-footer__sosial-links-youtube" href="#youtube">Youtube</a>
-        </li>
-      </ul>
-      <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive" target="blank"></a>
-    </footer>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню/Закрыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link"href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="page-title">
+          <h1 class="page-title__discription">Фотографии пользователей</h1>
+        </div>
+        <section class="pics">
+          <h2 class="visually-hidden">Фотографии пользователей</h2>
+          <p class="pics__slogan">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+          </p>
+          <ul class="pics-review__list">
+            <li class="pics-review__item pics-review__item--panorama">
+              <img src="..//img/panorama-mobile@1x.jpg" width="320" height="140" alt="панорама дня">
+              <p class="pics-review__name">Анна</p>
+              <span class="pics-review__time">(5 минут назад)</span>
+              <p class="pics-review__discription">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
+              <p class="pics-review__like">Нравится: 215</p>
+            </li>
+            <li class="pics-review__item">
+              <img src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Вчера он на луну летал">
+              <p class="pics-review__name">Левон</p>
+              <span class="pics-review__time">(5 часов назад)</span>
+              <p class="pics-review__discription">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
+              <p class="pics-review__like">Нравится: 356</p>
+            </li>
+            <li class="pics-review__item">
+              <img src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Соседи будут рады!">
+              <p class="pics-review__name">Антон</p>
+              <span class="pics-review__time">(12 часов назад)</span>
+              <p class="pics-review__discription">Соседи будут рады!</p>
+              <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
+              <p class="pics-review__like">Нравится: 666</p>
+            </li>
+            <li class="pics-review__item">
+              <img src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="цитата о высоком и вечном">
+              <p class="pics-review__name">Борис</p>
+              <span class="pics-review__time">(20 часов назад)</span>
+              <p class="pics-review__discription">Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
+              <p class="pics-review__like">Нравится: 215</p>
+            </li>
+            <li class="pics-review__item">
+              <img src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Где снег-то?">
+              <p class="pics-review__name">Сергей</p>
+              <span class="pics-review__time">(25 часов назад)</span>
+              <p class="pics-review__discription">Самая кубанская в мире!</p>
+              <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
+              <p class="pics-review__like">Нравится: 4</p>
+            </li>
+              <li class="pics-review__item">
+              <img src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Где снег-то?">
+              <p class="pics-review__name">Максим</p>
+              <span class="pics-review__time">(40 часов назад)</span>
+              <p class="pics-review__discription">Где снег-то?</p>
+              <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
+              <p class="pics-review__like">Нравится: 150</p>
+            </li>
+            <li class="pics-review__item">
+              <img src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="GM и лайки">
+              <p class="pics-review__name">Надежда</p>
+              <span class="pics-review__time">(45 часов назад)</span>
+              <p class="pics-review__discription">Всем GM и взаимные лайки!</p>
+              <a class="pics-review__like-icon" href="#liked">иконка сердечко</a>
+              <p class="pics-review__like">Нравится: 2560</p>
+            </li>
+          </ul>
+        </section>
+        <section class="photo-form">
+          <h2 class="visually-hidden">Загрузи своё фото</h2>
+          <p class="photo-form__slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <div class="photo-form__pic">
+            <img src="../img/photo-road-mobile@1x.jpg" width="285" height="375" alt="фото пользователя">
+          </div>
+          <ul class="photo-form__list">
+            <li class="photo-form__item">
+              <input type="radio" id="view-filter-1" name="view-filter" checked="">
+              <label for="view-filter-1"></label>
+            </li>
+            <li class="photo-form__item">
+              <input type="radio" id="view-filter-2" name="view-filter">
+              <label for="view-filter-2"></label>
+            </li>
+            <li class="photo-form__item">
+              <input type="radio" id="view-filter-3" name="view-filter">
+              <label for="view-filter-3"></label>
+            </li>
+          </ul>
+          <div class="photo-form__toggle">
+          </div>
+          <div class="photo-form__buttons">
+            <button class="photo-form__button photo-form__button--submit" type="submit">Запостить</button>
+            <button class="photo-form__button photo-form__button--reset" type="reset">Отмена</button>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-index" href="index.html">
+            <img src="logo.svg" width="147" height="40" alt="логотип">
+          </a>
+        </div>
+        <ul class="page-footer__sosial-links">
+          <li>
+            <a class="page-footer__sosial-links-twitter" href="#twitter">Twitter</a>
+          </li>
+          <li>
+            <a class="page-footer__sosial-links-facebook" href="#facebook">Facebook</a>
+          </li>
+          <li>
+            <a class="page-footer__sosial-links-youtube" href="#youtube">Youtube</a>
+          </li>
+        </ul>
+        <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive" target="blank"></a>
+      </footer>
+    </div>
   </body>
 </html>
