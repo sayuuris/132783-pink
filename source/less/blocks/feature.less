@@ -4,6 +4,8 @@
   font-size: 24px;
   line-height: 34px;
   font-weight: 100;
+  margin: 20px auto;
+  max-width: 210px;
 }
 //лучше кажется сделать отдельный div для управления цветом и отступов
 .feature__list {
@@ -12,6 +14,10 @@
   background-color: #f2f2f2;
   padding: 122px 0 0 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 280px;
 }
 
 .feature__title {
@@ -23,4 +29,44 @@
 
 .feature__discription {
   margin: 0 0 40px;
+}
+
+@media (max-width: 659px) {
+  .feature__list {
+    &::after {
+      content: "";
+      display: block;
+      height: 330px;
+      background: url("../img/iphone-screen-mobile@1x.png") no-repeat center;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .feature__wrapper {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .feature__slogan {
+    font-size: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .feature__list {
+    flex: 0 0 320px;
+    margin-left: 50%;
+    text-align: left;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature__list {
+    flex: 0 0 1000px;
+    margin: 0 auto;
+    flex-direction: row;
+    text-align: center;
+  }
 }

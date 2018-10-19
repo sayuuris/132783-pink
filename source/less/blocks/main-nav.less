@@ -4,6 +4,8 @@
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -25,4 +27,42 @@
   color: #ffffff;
   min-height: 65px;
   padding: 20px 25px;
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    width: 65%;
+    margin: 35px 70px 30px 330px;
+    background-color: transparent;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-left: auto;
+    padding: 10px;
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    max-width: 25%;
+    min-height: 0;
+    margin-right: 15px;
+    border-top: none;
+    box-shadow: none;
+  }
+
+  .main-nav__link {
+    min-height: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
 }

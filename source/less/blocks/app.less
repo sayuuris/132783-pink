@@ -1,10 +1,15 @@
 .app {
   //тестовый режим :) потом поищу как эту руку вниз прицепить, ограничен по времени пока;
-  display: block;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat center, url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  height: 463px;
-  background-color: #283645;
-  background-size: auto, cover;
+  background-color: #1d2631;
+}
+
+.app__container {
+  padding: 20px;
+  text-align: center;
+}
+
+.app__title {
+  display: none;
 }
 
 .app__download {
@@ -22,8 +27,88 @@
   border-radius: 30px;
 }
 
+.app__list {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.app__item {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 15px;
+}
+
+.app__logo {
+  display: block;
+  width: 50px;
+  height: 60px;
+}
+
+.app__logo--apple {
+  background: url("../img/logo-apple.svg") no-repeat center;
+}
+
+.app__logo--android {
+  background: url("../img/logo-android.svg") no-repeat center;
+}
+
+.app__logo--windows {
+  background: url("../img/logo-microsoft.svg") no-repeat center;
+}
+
 .app__discription {
-  text-align: center;
-  color: #ffffff;
+  color: #bbbdbf;
   font-weight: 100;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+}
+
+@media (max-width: 659px) {
+  .app {
+    &::before {
+      content: "";
+      display: block;
+      height: 463px;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+      background-size: auto, cover;
+      background-color: #1d2631;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .app {
+    display: block;
+    padding: 210px 20px 60px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    background-size: 600px, cover;
+    background-color: #1d2631;
+  }
+
+  .app__container {
+    padding: 0;
+    width: 300px;
+    margin: 0 10px auto;
+  }
+
+  .app__title {
+    display: block;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 52px;
+    font-size: 40px;
+    max-width: 200px;
+    margin: 0 auto 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat center bottom, url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    background-size: 750px, cover;
+    background-color: #1d2631;
+  }
 }

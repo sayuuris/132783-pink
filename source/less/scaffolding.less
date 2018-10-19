@@ -1,8 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
 body {
   margin: 0 auto;
   background-color: #ffffffff;
   color: #283645;
-  font-family: "opensans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -18,7 +29,7 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect (0 0 0 0);
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;

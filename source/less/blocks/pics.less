@@ -1,4 +1,4 @@
-.pics__slogan {
+.pics-review__slogan {
   display: block;
   margin: 50px auto 55px;
   line-height: 30px;
@@ -7,6 +7,7 @@
 
 .pics-review__list {
   list-style: none;
+  padding: 0;
 }
 
 .pics-review__item {
@@ -17,6 +18,10 @@
 .pics-review__item--panorama {
   max-width: 320px;
   //name и time в отдельный div для помещения в одну строчку?
+}
+
+.pics-review__container {
+  padding: 20px;
 }
 
 .pics-review__name {
@@ -32,11 +37,47 @@
 
 .pics-review__discription {
   display: block;
-  margin: 13px 20px;
+  margin: 0;
 }
 
 .pics-review__like {
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: 660px) {
+  .pics-review__slogan {
+    width: 436px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .pics-review__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pics-review__item {
+    margin: 20px;
+  }
+
+  .pics-review__item--panorama {
+    max-width: 660px;
+  }
+
+  .pics-review__container {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pics-review__slogan {
+    width: 570px;
+    margin: 100px auto 90px;
+  }
+
+  .pics-review__item--panorama {
+    max-width: 1200px;
+  }
 }

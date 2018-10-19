@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="page-wrapper">
-      <header class="page-header">
+    <header class="page-header">
+      <div class="page-wrapper">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Приложение Pink">
         </a>
@@ -28,16 +29,17 @@
             </li>
           </ul>
         </nav>
+      </div>
       </header>
       <main>
         <div class="page-title">
-          <h1 class="page-title__discription">Конкурс на самое<br> безбашенное<br>
-          путешествие с Пинк
-          </h1>
+          <h1 class="page-title__discription">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
+        <div class="page-wrapper">
         <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="page-form__title">
             <p class="page-form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <p class="page-form__slogan page-form__slogan--form">Пожалуйста, заполните форму ниже:</p>
           </div>
           <fieldset class="fieldset-name">
             <label class="fieldset-name__item">
@@ -106,18 +108,20 @@
           </fieldset>
           <fieldset class="fieldset-apps">
             <h2 class="fieldset-apps__title">С каким приложением путешествовали?</h2>
-            <label class="fieldset-apps__item">
-              <span class="fieldset-apps__discription">Pink для iOS</span>
-              <input class="fieldset-apps__input"type="radio" name="apps" id="apps_radio-1" checked>
-            </label>
-            <label class="fieldset-apps__item">
-              <span class="fieldset-apps__discription">Pink на Android</span>
-              <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-2">
-            </label>
-            <label class="fieldset-apps__item">
-              <span class="fieldset-apps__discription">Windows Phone</span>
-              <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-3">
-            </label>
+            <div class="fieldset-apps__wrap">
+              <label class="fieldset-apps__item">
+                <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-1" checked>
+                <span class="fieldset-apps__discription">Pink для iOS</span>
+              </label>
+              <label class="fieldset-apps__item">
+                <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-2">
+                <span class="fieldset-apps__discription">Pink на Android</span>
+              </label>
+              <label class="fieldset-apps__item">
+                <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-3">
+                <span class="fieldset-apps__discription">Windows Phone</span>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="fieldset-review">
             <h2 class="fieldset-review__title">Опишите свои эмоции</h2>
@@ -127,25 +131,29 @@
           <button class="page-form__button" type="submit" name="send-form" value="Отправить форму">Отправить форму</button>
           <span class="page-form__required">— обязательные поля</span>
         </form>
+      </div>
       </main>
+      <div class="page-wrapper">
       <footer class="page-footer">
-        <div class="page-footer__logo">
-          <a class="page-footer__logo-index" href="index.html">
-            <img src="logo.svg" width="147" height="40" alt="логотип">
-          </a>
+        <div class="page-footer__container">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-index" href="index.html">
+              <img src="logo.svg" width="147" height="40" alt="логотип">
+            </a>
+          </div>
+          <ul class="page-footer__sosial-links">
+            <li>
+              <a class="page-footer__sosial-links-twitter" href="#twitter">Twitter</a>
+            </li>
+            <li>
+              <a class="page-footer__sosial-links-facebook" href="#facebook">Facebook</a>
+            </li>
+            <li>
+              <a class="page-footer__sosial-links-youtube" href="#youtube">Youtube</a>
+            <li>
+          </ul>
+          <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive" target="blank">Разработано</a>
         </div>
-        <ul class="page-footer__sosial-links">
-          <li>
-            <a class="page-footer__sosial-links--twitter" href="#twitter">Twitter</a>
-          </li>
-          <li>
-            <a class="page-footer__sosial-links--facebook" href="#facebook">Facebook</a>
-          </li>
-          <li>
-            <a class="page-footer__sosial-links--youtube" href="#youtube">Youtube</a>
-          </li>
-        </ul>
-        <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive" target="blank"></a>
       </footer>
     </div>
   </body>

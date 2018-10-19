@@ -1,6 +1,8 @@
 .review__list {
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .review__name {
@@ -8,6 +10,16 @@
   line-height: 30px;
 }
 
+.review__occupation {
+  display: none;
+}
+
 .review__description {
   line-height: 30px;
+}
+
+@media (min-width: 660px) {
+  .review__occupation {
+    display: block;
+  }
 }
