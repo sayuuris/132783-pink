@@ -1,18 +1,26 @@
+.feature__wrapper {
+  padding: 20px 20px 0;
+}
+
+.feature__slogan br {
+  display: none;
+}
+
 .feature__slogan {
   display: block;
   text-align: center;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 30px;
   font-weight: 100;
-  margin: 20px auto;
+  margin: 20px auto 27px;
   max-width: 210px;
 }
-//лучше кажется сделать отдельный div для управления цветом и отступов
+
 .feature__list {
   list-style: none;
   text-align: center;
   background-color: #f2f2f2;
-  padding: 122px 0 0 0;
+  padding: 90px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -31,13 +39,17 @@
   margin: 0 0 40px;
 }
 
+.feature__discription :last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 659px) {
   .feature__list {
     &::after {
       content: "";
       display: block;
       height: 330px;
-      background: url("../img/iphone-screen-mobile@1x.png") no-repeat center;
+      background: url("../img/iphone-screen-mobile@1x.png") no-repeat center 50px;
     }
   }
 }
@@ -51,18 +63,44 @@
   .feature__slogan {
     font-size: 40px;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
+  }
+
+  .feature__slogan br {
+    display: inline-block;
+  }
+
+  .feature__list {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -350px;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 300px;
+      height: 530px;
+      background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat center 50px;
+      background-size: 270px;
+    }
   }
 
   .feature__list {
     flex: 0 0 320px;
-    margin-left: 50%;
+    padding-left: 50%;
     text-align: left;
     position: relative;
   }
 }
 
 @media (min-width: 1200px) {
+  .feature__list {
+    &::before {
+      content: '';
+      display: none;
+  }
+}
   .feature__list {
     flex: 0 0 1000px;
     margin: 0 auto;
