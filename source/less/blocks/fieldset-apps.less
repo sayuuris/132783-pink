@@ -16,8 +16,30 @@
   line-height: 18px;
 }
 
+.fieldset-apps__wrap {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.fieldset-apps__item {
+  align-items: center;
+  margin: auto 0 40px;
+}
+
 .fieldset-apps__discription {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+}
+
+@media (min-width: 660px) {
+  .fieldset-apps {
+    margin: 40px 0 60px;
+    padding: 33px 10px;
+    border: 2px solid #e5e5e5;
+    background: #ffffff;
+  }
 }

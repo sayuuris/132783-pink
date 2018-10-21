@@ -41,11 +41,13 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
   }
 
   .contacts__container {
-    width: 50%;
-    margin: 0 auto 40px;
+    flex: 1 0 40%;
+    margin: 20px 30px 40px;
+    max-width: 50%;
   }
   .contacts__map {
     background: url("..//img/bg-map-tablet@1x.jpg") no-repeat center;
@@ -63,7 +65,18 @@
     margin-bottom: 55px;
   }
 
-  .contacts__container {
-    width: 33%;
+  .contacts__wrapper {
+    flex-wrap: nowrap;
   }
+
+  .contacts__container {
+    flex: 1 0 33%;
+    margin: 20px auto 40px;
+    max-width: 50%;
+  }
+  .contacts__wrapper :last-child{
+    order: -1;
+
+  }
+
 }

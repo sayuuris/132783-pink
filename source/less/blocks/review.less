@@ -49,3 +49,34 @@
     font-size: 20px;
   }
 }
+@media (min-width: 1200px) {
+  .review__list {
+    margin-top: 150px;
+  }
+
+  .review__list {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 55px;
+      left: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      background: #fff url(../img/icon-quotes.svg) no-repeat center;
+    }  
+  }
+
+  .review__description {
+    margin: 0 120px 50px;
+  }
+
+  .review__name {
+    font-size: 24px;
+  }
+
+  .review__occupation {
+    font-size: 18px;
+  }
+}
