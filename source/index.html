@@ -65,15 +65,15 @@
             <p class="feature__slogan">Нам есть что вам <br>предложить</p>
           </div>
           <ul class="feature__list">
-            <li class="feature__item">
+            <li class="feature__item feature__item--iphone1">
               <h3 class="feature__title">Поднимает настроение</h3>
               <p class="feature__discription">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="feature__item">
+            <li class="feature__item feature__item--iphone2">
               <h3 class="feature__title">Меняет настроение</h3>
-              <p class="feature__discription">Сделайте снимок и украсьте его смайликом или текстовой подписью,чтобы усилить эффект</p>
+              <p class="feature__discription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="feature__item">
+            <li class="feature__item feature__item--iphone3">
               <h3 class="feature__title">Заводит новых друзей</h3>
               <p class="feature__discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -87,44 +87,68 @@
           </div>
         </section>
         <div class="page-wrapper">
-        <section class="review">
-          <div class="review__wrapper slider">
-            <h2 class="visually-hidden">Обзоры пользователей</h2>
-            <ul class="review__list">
-              <li class="review__item slider__item">
-                <h3 class="review__name">Николай Петров</h3>
-                <span class="review__occupation">25 лет, водитель трамвая</span>
-                <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </li>
-              <li class="review__item slider__item">
-                <h3 class="review__name">Николай Петров</h3>
-                <span class="review__occupation">25 лет, водитель трамвая</span>
-                <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </li>
-              <li class="review__item slider__item">
-                <h3 class="review__name">Николай Петров</h3>
-                <span class="review__occupation">25 лет, водитель трамвая</span>
-                <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+          <section class="review">
+            <div class="review__wrapper slider">
+              <h2 class="visually-hidden">Обзоры пользователей</h2>
+              <ul class="review__list">
+                <li class="review__item slider__item">
+                  <h3 class="review__name">Николай Петров</h3>
+                  <span class="review__occupation">25 лет, водитель трамвая</span>
+                  <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+                <li class="review__item slider__item">
+                  <h3 class="review__name">Николай Петров</h3>
+                  <span class="review__occupation">25 лет, водитель трамвая</span>
+                  <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+                <li class="review__item slider__item">
+                  <h3 class="review__name">Николай Петров</h3>
+                  <span class="review__occupation">25 лет, водитель трамвая</span>
+                  <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>  
         <section class="tariffs">
           <h2 class="visually-hidden">Тарифы</h2>
-          <div class="tariffs__wrapper slider">
-            <div class="slider__item">
-              <div class="tariffs__package tariffs__package-hit">
-                <p class="tariffs__type">Стандарт</p>
-                <span class="tariffs__price">3,99 USD</span>
-              </div>
-              <ul class="tariffs__list">
-                <li class="tariffs__item">Розовый фильтр <span>картинка</span></li>
-                <li class="tariffs__item">Смайлики <span>картинка</span></li>
-                <li class="tariffs__item">Комментарии <span>картинка</span></li>
-              </ul>
+          <div class="tariffs-slider__wrapper slider">
+            <div class="tariffs-slider__item">
+              <table class="tariffs-table">
+                <tbody>
+                  <tr>
+                    <th class="tariffs-table__hidden"></th>
+                    <th class="tariffs-table__head">База<br><span class="tariffs-table__price">1,99 usd</span>
+                    </th>
+                    <th class="tariffs-table__head">Стандарт<br><span class="tariffs-table__price">3,99 usd</span>
+                    </th>
+                    <th class="tariffs-table__head">Анлим<br><span class="tariffs-table__price">9,99 usd</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>Розовый фильтр</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Смайлики</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Комментарии</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+              </tbody>
+              </table>
             </div>
           </div>
         </section>
+        <div class="page-wrapper">
         <section class="contacts">
           <div class="contacts__list">
             <p class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</p>
