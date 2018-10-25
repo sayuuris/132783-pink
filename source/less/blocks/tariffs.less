@@ -1,47 +1,103 @@
+.tariffs-table__tablet{
+  display: none;
+}
+.tariffs-table__hidden {
+  display: none;
+}
+.tariffs-slider__scroll {
+  overflow-x: auto;
+}
+
+.tariffs-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  word-break: break-all;
+}
+.tariffs-slider__item {
+  width: 883px;
+  padding: 0 20px;
+}
+
+.tariffs-table td { 
+  border: 2px solid #e5e5e5;
+  width: 280px;
+  padding: 15px;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.tariffs-table__head {
+  border: 2px solid #e5e5e5;
+  background: #283645;
+  width: 280px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tariffs-table__price {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
 @media (min-width: 660px) {
+
+  .tariffs-slider__scroll {
+    overflow-x: inherit;
+  }
+  .tariffs-slider__item {
+    width: 100%;
+    padding: 0;
+   }
+
+  .tariffs-table__hidden {
+    display: table-cell;
+    background-color: #f2f2f2;
+  }
+  .tariffs-table__tablet {
+    display: table-cell;
+    border: 2px solid #e5e5e5;
+    width: 153px;
+    padding: 15px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    font-weight: 400;
+  }
+  .tariffs-table td { 
+    width: 153px;
+  }
+  .tariffs-table__head {
+    width: 153px;
+  }
+
+
+  .tariffs-table__head {
+    font-size: 16px;
+  }
+  .tariffs-table__price {
+    font-size: 18px;
+  }
   .tariffs {
     background-color: #f2f2f2;
   }
 
   .tariffs-slider__wrapper {
+    width: 620px;
     padding: 95px 0;
   }
   
-  .tariffs-table {
-    width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    word-break: break-all;
-  }
 
-  .tariffs-table__head {
-    border: 2px solid #e5e5e5;
-    background: #283645;
-    width: 153px;
-    padding: 15px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
 
-  .tariffs-table__price {
-    display: block;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-
-  .tariffs-table td { 
-  border: 2px solid #e5e5e5;
-  width: 153px;
-  padding: 15px;
-  background-color: #ffffff;
-  font-size: 14px;
-  line-height: 30px;
-  }
 } 
 
 @media (min-width: 1200px) {

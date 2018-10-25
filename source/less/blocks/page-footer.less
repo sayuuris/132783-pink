@@ -26,6 +26,7 @@
 .page-footer__sosial-icon {
   display: block;
   border-radius: 50%;
+  padding: 13px;
   width: 51px;
   height: 51px;
   border: 3px solid #e9ebec;
@@ -34,33 +35,31 @@
     border: 3px solid #3b4855;
   }
 }
-
-.page-footer__sosial-icon--twitter {
-  background: url(../img/icon-twitter.svg) no-repeat center;
-}
-
-.page-footer__sosial-icon--facebook {
-  background: url(../img/icon-facebook.svg) no-repeat center;
-}
-
-.page-footer__sosial-icon--youtube {
-  background: url(../img/icon-youtube.svg) no-repeat center;
+.page-footer__sosial-icon svg {
+  fill: #d22856;
 }
 
 .page-footer__dev {
-  display: block;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-
+  color: #283645;
+  line-height: 18px;
+  font-size: 18px;
+  margin-right: 12px;
 }
 
 .page-footer__academy  {
-  display: block;
-  width: 51px;
-  height: 51px;
-  background: url(../img/logo-htmlacademy.svg) no-repeat center;
+  display: flex;
+  align-items: center;
 }
+.page-footer__academy svg {
+  fill: #d22856;
+  &:hover {
+    fill: #283645;
+  }
+  &:active {
+    fill: #bec2c7;
+  }
+}
+
 
 @media (min-width: 660px) {
   .page-footer--index {
@@ -73,7 +72,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 36px 10px;
+    padding: 36px 0;
   }
 
   .page-footer__sosial-links {
