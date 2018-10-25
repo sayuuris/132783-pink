@@ -62,44 +62,44 @@
         </div>
         <div class="fieldset-achievements__wrapper"> 
           <fieldset class="fieldset-achievements">
-            <h2 class="fieldset-achievements__title">Ваши безбашенные<br>достижения в путешествии</h2>
+            <legend class="fieldset-achievements__title">Ваши безбашенные<br>достижения в путешествии</legend>
             <ul class="fieldset-achievements__list">
-              <li class="fieldset-achievements__item">
+              <li class="fieldset-achievements__item fieldset-achievements__item--achiev1">
                 <label class="fieldset-achievements__check">
                   <input class="fieldset-achievements__input" type="checkbox" id="check-1" name="achievements" checked>
                   <span class="fieldset-achivements__checkbox"></span>
                   <span class="fieldset-achievements__discription">Сделал селфи с акулой</span>
                 </label>
               </li>
-              <li class="fieldset-achievements__item">
+              <li class="fieldset-achievements__item fieldset-achievements__item--achiev2">
                 <label class="fieldset-achievements__check">
                   <input class="fieldset-achievements__input" type="checkbox" id="check-2" name="achievements" checked>
                   <span class="fieldset-achivements__checkbox"></span>
                   <span class="fieldset-achievements__discription">Обгорел на пляже</span>
                 </label>
               </li>
-              <li class="fieldset-achievements__item">
+              <li class="fieldset-achievements__item fieldset-achievements__item--achiev3">
                 <label class="fieldset-achievements__check">
                   <input class="fieldset-achievements__input" type="checkbox" id="check-3" name="achievements">
                   <span class="fieldset-achivements__checkbox"></span>
                   <span class="fieldset-achievements__discription">Видел Чака Норриса</span>
                 </label>
               </li>
-              <li class="fieldset-achievements__item">
+              <li class="fieldset-achievements__item fieldset-achievements__item--achiev4">
                 <label class="fieldset-achievements__check">
                   <input class="fieldset-achievements__input" type="checkbox" id="check-4" name="achievements">
                   <span class="fieldset-achivements__checkbox"></span>
                   <span class="fieldset-achievements__discription">Накупил сувениров</span>
                 </label>
               </li>
-              <li class="fieldset-achievements__item">
+              <li class="fieldset-achievements__item fieldset-achievements__item--achiev5">
                 <label class="fieldset-achievements__check">
                   <input class="fieldset-achievements__input" type="checkbox" id="check-5" name="achievements" checked>
                   <span class="fieldset-achivements__checkbox"></span>
                   <span class="fieldset-achievements__discription">Удержал башню</span>
                 </label>
               </li>
-              <li class="fieldset-achievements__item">
+              <li class="fieldset-achievements__item fieldset-achievements__item--achiev6">
                 <label class="fieldset-achievements__check">
                   <input class="fieldset-achievements__input" type="checkbox" id="check-6" name="achievements">
                   <span class="fieldset-achivements__checkbox"></span>
@@ -111,16 +111,19 @@
         </div>
         <div class="page-wrapper fieldset-contacts__container">
           <fieldset class="fieldset-contacts">
-            <label class="fieldset-contacts__item">
-              <span class="fieldset-contacts__icon fieldset-contacts__icon--number"></span>
-              <span class="fieldset-contacts__discripton">Номер телефона</span>
-              <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="fieldset-contacts__item">
-              <span class="fieldset-contacts__icon fieldset-contacts__icon--mail"></span>
-              <span class="fieldset-contacts__discripton">Адрес почты</span>
-              <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Введите почту *" required>
-            </label>
+            <legend class="fieldset-contacts__title">Контактная информация</legend>
+            <div class="fieldset-contacts__desctop">
+              <label class="fieldset-contacts__item">
+                <span class="fieldset-contacts__icon fieldset-contacts__icon--number"></span>
+                <span class="fieldset-contacts__discripton">Номер телефона</span>
+                <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Номер, пожалуйста">
+              </label>
+              <label class="fieldset-contacts__item">
+                <span class="fieldset-contacts__icon fieldset-contacts__icon--mail"></span>
+                <span class="fieldset-contacts__discripton">Адрес почты</span>
+                <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Введите почту *" required>
+              </label>
+            </div>
           </fieldset>
         </div>
         <div class="fieldset-apps__wrapper">
@@ -145,12 +148,14 @@
        </div>
       <div class="page-wrapper fieldset-review__container">
         <fieldset class="fieldset-review">
-          <h2 class="fieldset-review__title">Опишите свои эмоции</h2>
+          <legend class="fieldset-review__title">Опишите свои эмоции</legend>
           <textarea class="fieldset-review__discription" placeholder="Можно прям в красках, не стесняясь в выражениях">
           </textarea>
         </fieldset>
-        <button class="page-form__button" type="submit" name="send-form" value="Отправить форму">Отправить форму</button>
-        <span class="page-form__required">— обязательные поля</span>
+        <div class="page-form__button-container">
+          <button class="page-form__button" type="submit" name="send-form" value="Отправить форму">Отправить форму</button>
+          <span class="page-form__required"><span class="page-form__required-star">*</span> — обязательные поля</span>
+        </div>
       </div>
       </form>
     </main>

@@ -28,7 +28,7 @@
 
 .fieldset-achievements__title {
   text-transform: uppercase;
-  color: #d22856;
+  color: #de6183;
   line-height: 18px;
   font-size: 14px;
   font-weight: 400;
@@ -56,14 +56,65 @@
   .fieldset-achievements__wrapper {
     order: 4;
     background-color: #ffffff;
+    margin: 0 20px;
   } 
+
   .fieldset-achievements {
-    padding: 40px 20px 10px;
+    border: 2px solid #e5e5e5;
+    padding: 0 60px;
   }
+
+  .fieldset-achievements__title br {
+    display: none;
+  }
+
+  .fieldset-achievements__title {
+    display: block;
+    margin: 0 auto 50px;
+    line-height: 30px;
+    width: 436px;
+  }
+
   .fieldset-achievements__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
    }
+
+}
+@media (min-width: 1200px) {
+  .fieldset-achievements__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fieldset-achievements__wrapper {
+    margin: 0;
+  }
+
+  .fieldset-achievements__item {
+    flex-basis: 265px;
+  }
+  .fieldset-achivements__checkbox {
+    margin-right: 22px;
+  }
+  .fieldset-achievements__item--achiev1 {
+    order: 1;
+  }
+  .fieldset-achievements__item--achiev2 {
+    order: 4;
+  }
+  .fieldset-achievements__item--achiev3 {
+    order: 2;
+  }
+  .fieldset-achievements__item--achiev4 {
+    order: 5;
+  }
+  .fieldset-achievements__item--achiev5 {
+    order: 3;
+  }
+  .fieldset-achievements__item--achiev6 {
+    order: 6;
+  }
 
 }
