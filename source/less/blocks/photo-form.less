@@ -30,8 +30,11 @@
   display: inline-block;
 }
 
-.photo-form__item input {
-  display: none;
+.photo-form__item button {
+  padding: 0;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: none;
 }
 
 .photo-form__item label {
@@ -47,19 +50,29 @@
   &:hover {
     fill: #8f969d;
   }
+  &:active {
+    fill: #d22856;
+  }
 }
-
+.photo-form__crop--active  {
+  fill: #d22856;
+}
 .photo-form__fill  {
   fill: #b5b9be;
   &:hover {
     fill: #8f969d;
   }
+  &:active {
+    fill: #d22856;
+  }
 }
-
 .photo-form__contrast  {
   fill: #b5b9be;
    &:hover {
      fill: #8f969d;
+  }
+  &:active {
+    fill: #d22856;
   }
  }
 
@@ -71,16 +84,36 @@
   background-color: #f2f2f2;
 }
 .photo-form__range {
+  position: relative;
   margin: 0 auto 30px;
   padding: 0;
   text-align: center;
   border: none;
-  border-bottom: 1px solid #dddfe0;
+  border-bottom: 2px solid #000000;
   width: 240px;
   height: 18px;
   background-color: transparent;
   outline: none;
-  border: none;
+}
+.photo-form__range--crop {
+    &::after {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding: 13px;
+    width: 51px;
+    height: 51px;
+    border: 3px solid #bd0f0f;
+    text-decoration: none;
+  }
+}
+.photo-form__range--fill {
+  display: none;
+
+}
+
+.photo-form__range--contrast {
+  display: none;
 }
 
 .photo-form__buttons {
@@ -119,6 +152,45 @@
     margin: 50px 120px 75px;
     font-size: 18px;
     line-height: 30px;
+  }
+  .photo-form__list {
+    display: none;
+  }
+
+  .photo-form__pic {
+    position: absolute;
+
+  }
+  .photo-form__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50%;
+  }
+  .photo-form__range--crop {
+    display: block;
+    margin-top: 65px;
+  }
+
+  .photo-form__range--fill {
+    display: block;
+  }
+
+  .photo-form__range--contrast {
+    display: block;
+  }
+  .photo-form__range {
+    &::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -47px;
+    width: 45px;
+    height: 45px;
+    }
+  }
+  .photo-form__range--crop::before {
+
+    background: url("..//img/icon-editor-crop.svg") no-repeat center;
   }
 
 }
