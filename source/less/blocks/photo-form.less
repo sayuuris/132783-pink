@@ -5,11 +5,12 @@
   text-align: center;
   line-height: 30px;
 }
+.photo-form__wrapper {
+  background-color: #f2f2f2;
+}
 
 .photo-form__pic {
-  text-align: center;
-  padding: 20px 20px;
-  background-color: #f2f2f2;
+  padding: 20px 0 40px;
 }
 
 .photo-form__container {
@@ -24,6 +25,7 @@
   margin: 0 auto;
   padding: 0;
   width: 200px;
+  margin-bottom: 30px;
 }
 
 .photo-form__item {
@@ -76,43 +78,37 @@
   }
  }
 
-//приблизительно для тумблера
-.photo-form__toggle {
-  width: 240px;
-  height: 18px;
-  margin: 0 auto 30px;
-  background-color: #f2f2f2;
-}
+
 .photo-form__range {
-  position: relative;
-  margin: 0 auto 30px;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-bottom: 2px solid #000000;
+  background-color: #000000;
+  height: 1px;
   width: 240px;
-  height: 18px;
-  background-color: transparent;
-  outline: none;
+  margin: 0 auto;
 }
-.photo-form__range--crop {
-    &::after {
+.photo-form__range-container {
+  position: relative;
+}
+
+.photo-form__range-container--crop button {
     display: block;
     position: absolute;
     border-radius: 50%;
-    padding: 13px;
-    width: 51px;
-    height: 51px;
-    border: 3px solid #bd0f0f;
+    padding: 5px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #bd0f0f;
     text-decoration: none;
+    background-color: #ffffff;
+    right: 100px;
+    top: -6px;
   }
-}
-.photo-form__range--fill {
+
+.photo-form__range-container--fill {
   display: none;
 
 }
 
-.photo-form__range--contrast {
+.photo-form__range-container--contrast {
   display: none;
 }
 
@@ -159,23 +155,33 @@
 
   .photo-form__pic {
     position: absolute;
-
   }
   .photo-form__container {
     display: flex;
     flex-direction: column;
     padding-left: 50%;
   }
-  .photo-form__range--crop {
+  .photo-form__range-container {
+    padding: 25px 0;
+    border-bottom: 1px solid #bd0f0f;
+  
+  }
+  .photo-form__range {
+    background-color:  #000000;
+    height: 1px;
+    width: 240px;
+    margin: 0 auto;
+  }
+  .photo-form__range-container--crop {
     display: block;
     margin-top: 65px;
   }
 
-  .photo-form__range--fill {
+  .photo-form__range-container--fill {
     display: block;
   }
 
-  .photo-form__range--contrast {
+  .photo-form__range-container--contrast {
     display: block;
   }
   .photo-form__range {

@@ -16,7 +16,7 @@
   
 }
 
-.fieldset-achivements__checkbox {
+.fieldset-achievements__checkbox {
   width: 38px;
   height: 38px;
   margin-right: 30px;
@@ -24,13 +24,16 @@
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
   }
-.fieldset-achivements__checkbox:checked {
+
+  .fieldset-achievements__input:checked + .fieldset-achievements__checkbox {
   &::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    background: url("..//img/icon-yes.svg");
-    width: 50px;
+    background: url("..//img/icon-yes.svg") no-repeat center;
+    width: 35px;
+    height: 35px;
   }
 }
 
