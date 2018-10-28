@@ -1,23 +1,96 @@
+.fieldset-apps__wrapper {
+  padding: 42px 10px;
+  background-color: #f2f2f2;
+}
+
 .fieldset-apps {
   box-sizing: border-box;
-  padding: 33px 10px 7px;
-  background: #f2f2f2;
   margin: 0;
   border: none;
+  padding: 0;
 }
 
 .fieldset-apps__title {
   text-transform: uppercase;
-  max-width: 220px;
   margin: 0 auto 30px;
   color: #de6183;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  display: block;
+}
+
+.fieldset-apps__container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.fieldset-apps__item {
+  align-items: center;
+  margin: auto 0 40px;
+  display: flex;
+}
+
+.fieldset-apps__input {
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  min-width: 35px;
+  height: 35px;
+  margin-right: 22px;
+  border-radius: 50%;
+}
+
+.fieldset-apps__input:checked {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #d22856;
+  }
 }
 
 .fieldset-apps__discription {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+}
+
+@media (min-width: 660px) {
+  .fieldset-apps__wrapper {
+    order: 2;
+    background-color: #ffffff;
+    padding: 30px 20px;
+  }
+
+  .fieldset-apps__container {
+    margin: 0 60px 10px;
+  }
+
+  .fieldset-apps__title {
+    width: 368px;
+    line-height: 30px;
+  }
+
+  .fieldset-apps {
+    border: 2px solid #e5e5e5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fieldset-apps__wrapper {
+    width: 435px;
+    padding: 0;
+  }
 }
