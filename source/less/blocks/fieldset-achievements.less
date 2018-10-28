@@ -1,6 +1,5 @@
 .fieldset-achievements__wrapper {
   background-color: #f2f2f2;
-
 }
 
 .fieldset-achievements {
@@ -8,12 +7,13 @@
   padding: 40px 10px 10px;
   margin: 0;
 }
+
 .fieldset-achievements__input {
   display: none;
 }
+
 .fieldset-achievements__check {
   display: flex;
-  
 }
 
 .fieldset-achievements__checkbox {
@@ -23,11 +23,11 @@
   position: relative;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
-  }
+}
 
-  .fieldset-achievements__input:checked + .fieldset-achievements__checkbox {
+.fieldset-achievements__input:checked + .fieldset-achievements__checkbox {
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,6 @@
     height: 35px;
   }
 }
-
 
 .fieldset-achievements__title {
   text-transform: uppercase;
@@ -69,7 +68,7 @@
     order: 4;
     background-color: #ffffff;
     margin: 0 20px;
-  } 
+  }
 
   .fieldset-achievements {
     border: 2px solid #e5e5e5;
@@ -91,15 +90,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-   }
-
+  }
 }
+
 @media (min-width: 1200px) {
   .fieldset-achievements__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .fieldset-achievements__wrapper {
     margin: 0;
   }
@@ -107,26 +107,32 @@
   .fieldset-achievements__item {
     flex-basis: 265px;
   }
+
   .fieldset-achivements__checkbox {
     margin-right: 22px;
   }
+
   .fieldset-achievements__item--achiev1 {
     order: 1;
   }
+
   .fieldset-achievements__item--achiev2 {
     order: 4;
   }
+
   .fieldset-achievements__item--achiev3 {
     order: 2;
   }
+
   .fieldset-achievements__item--achiev4 {
     order: 5;
   }
+
   .fieldset-achievements__item--achiev5 {
     order: 3;
   }
+
   .fieldset-achievements__item--achiev6 {
     order: 6;
   }
-
 }
