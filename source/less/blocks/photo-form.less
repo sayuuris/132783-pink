@@ -114,13 +114,13 @@
 
 .photo-form__buttons {
   background-color: #f2f2f2;
-  margin: 40px auto 0;
+  margin: 68px 0 30px;
 }
 
 .photo-form__button {
   display: block;
   box-sizing: border-box;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
   padding: 15px;
   border: 2px solid #ffffff;
   border-radius: 30px;
@@ -156,33 +156,69 @@
   .photo-form__pic {
     position: absolute;
   }
+  .photo-form__pic {
+    padding: 40px 0;
+  }
   .photo-form__container {
     display: flex;
     flex-direction: column;
     padding-left: 50%;
+    align-items: flex-end;
   }
   .photo-form__range-container {
+    width: 275px;
     padding: 25px 0;
-    border-bottom: 1px solid #bd0f0f;
+    border-bottom: 1px solid #dddfe0;
   
   }
   .photo-form__range {
     background-color:  #000000;
     height: 1px;
-    width: 240px;
+    width: 203px;
     margin: 0 auto;
   }
   .photo-form__range-container--crop {
     display: block;
-    margin-top: 65px;
+    margin-top: 50px;
+    width: 275px;
+  }
+  .photo-form__range-container--crop button {
+    top:18px;
+    right: 72px;
   }
 
   .photo-form__range-container--fill {
     display: block;
   }
-
+  .photo-form__range-container--fill button {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #bd0f0f;
+    text-decoration: none;
+    background-color: #ffffff;
+    left: 75px;
+    top: 18px;
+  }
   .photo-form__range-container--contrast {
     display: block;
+  }
+
+  .photo-form__range-container--contrast button {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #bd0f0f;
+    text-decoration: none;
+    background-color: #ffffff;
+    right: 120px;
+    top: 18px;
   }
   .photo-form__range {
     &::before {
