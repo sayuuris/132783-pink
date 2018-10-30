@@ -21,8 +21,24 @@
   height: auto;
 }
 
+.page-header__logo--mobile {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+.page-header__logo--tablet {
+  display: none;
+}
+
+.page-header__logo--desktop {
+  display: none;
+}
+
 @media (min-width: 660px) {
-  .page-header__wrap {
+  .page-header__wrapper {
     height: 110px;
   }
 
@@ -30,6 +46,14 @@
     position: absolute;
     top: 25px;
     left: 40px;
+  }
+
+  .page-header__logo--mobile {
+    display: none;
+  }
+
+  .page-header__logo--tablet {
+    display: inline-block;
   }
 }
 
@@ -45,6 +69,14 @@
 
   .page-header__logo {
     left: 130px;
-    top: 40px;
+    top: 26px;
+  }
+
+  .page-header__logo--tablet {
+    display: none;
+  }
+
+  .page-header__logo--desktop {
+    display: block;
   }
 }

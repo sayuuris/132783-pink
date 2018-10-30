@@ -103,11 +103,15 @@
   padding: 5px;
   width: 14px;
   height: 14px;
-  border: 2px solid #bd0f0f;
+  border: 2px solid #d22856;
   text-decoration: none;
   background-color: #ffffff;
   right: 100px;
   top: -6px;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .photo-form__range-container--fill {
@@ -141,12 +145,34 @@
 .photo-form__button--submit {
   color: #d22856;
   border: 3px solid #d22856;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: #dc6a84;
+    background-color: #d22856;
+  }
 }
 
 .photo-form__button--reset {
-  color: #b5b9be;
-  border: 3px solid #b5b9be;
-  opacity: 0.6;
+  color: #283645;
+  border: 3px solid #283645;
+  opacity: 0.1;
+
+  &:hover {
+    color: #283645;
+    border: 3px solid #283645;
+    opacity: 0.3;
+  }
+
+  &::active {
+    color: #283645;
+    background-color: #283645;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 660px) {
@@ -216,11 +242,15 @@
     padding: 5px;
     width: 14px;
     height: 14px;
-    border: 2px solid #bd0f0f;
+    border: 2px solid #d22856;
     text-decoration: none;
     background-color: #ffffff;
     left: 75px;
     top: 18px;
+
+    &:active {
+      background-color: #d22856;
+    }
   }
 
   .photo-form__range-container--contrast {
@@ -234,11 +264,15 @@
     padding: 5px;
     width: 14px;
     height: 14px;
-    border: 2px solid #bd0f0f;
+    border: 2px solid #d22856;
     text-decoration: none;
     background-color: #ffffff;
     right: 120px;
     top: 18px;
+
+    &:active {
+      background-color: #d22856;
+    }
   }
 
   .photo-form__range--crop::before {

@@ -14,6 +14,10 @@
   margin-bottom: 35px;
 }
 
+.page-footer__logo-index--desktop {
+  display: none;
+}
+
 .page-footer__sosial-links {
   list-style: none;
   padding: 0;
@@ -38,10 +42,18 @@
   &:hover {
     border: 3px solid #3b4855;
   }
+
+  &::active {
+    border: 3px solid #e9ebec;
+  }
 }
 
 .page-footer__sosial-icon svg {
   fill: #d22856;
+
+  &:active {
+    fill:#f1becc;
+  }
 }
 
 .page-footer__dev {
@@ -84,6 +96,10 @@
     padding: 36px 0;
   }
 
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
+
   .page-footer__sosial-links {
     padding: 0;
     margin: 0;
@@ -100,5 +116,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+  }
+
+  .page-footer__logo-index--desktop {
+    display: block;
+  }
+
+  .page-footer__logo-index--mobile {
+    display: none;
   }
 }
