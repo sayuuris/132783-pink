@@ -42,119 +42,117 @@
       <div class="page-title">
         <h1 class="page-title__discription">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
+      <div class="page-wrapper">
       <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="page-form__title">
           <p class="page-form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <p class="page-form__slogan page-form__slogan--form">Пожалуйста, заполните форму ниже:</p>
         </div>
-        <div class="page-wrapper fieldset-name__container">
-          <fieldset class="fieldset-name">
-            <label class="fieldset-name__item">
-              <span class="fieldset-name__name">Фамилия:</span>
-              <input class="fieldset-name__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+
+        <fieldset class="fieldset-name">
+          <label class="fieldset-name__item">
+            <span class="fieldset-name__name">Фамилия:</span>
+            <input class="fieldset-name__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+          </label>
+          <label class="fieldset-name__item">
+            <span class="fieldset-name__name">Имя:</span>
+            <input class="fieldset-name__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+          </label>
+          <label class="fieldset-name__item">
+            <span class="fieldset-name__name">Отчество:</span>
+            <input class="fieldset-name__input" type="text" name="surname" placeholder="Ну и отчество тоже">
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset-achievements">
+          <legend class="fieldset-achievements__title">Ваши безбашенные<br>достижения в путешествии</legend>
+          <ul class="fieldset-achievements__list">
+            <li class="fieldset-achievements__item fieldset-achievements__item--achiev1">
+              <label class="fieldset-achievements__check">
+                <input class="fieldset-achievements__input" type="checkbox" id="check-1" name="achievements" checked>
+                <span class="fieldset-achievements__checkbox"></span>
+                <span class="fieldset-achievements__discription">Сделал селфи с акулой</span>
+              </label>
+            </li>
+            <li class="fieldset-achievements__item fieldset-achievements__item--achiev2">
+              <label class="fieldset-achievements__check">
+                <input class="fieldset-achievements__input" type="checkbox" id="check-2" name="achievements" checked>
+                <span class="fieldset-achievements__checkbox"></span>
+                <span class="fieldset-achievements__discription">Обгорел на пляже</span>
+              </label>
+            </li>
+            <li class="fieldset-achievements__item fieldset-achievements__item--achiev3">
+              <label class="fieldset-achievements__check">
+                <input class="fieldset-achievements__input" type="checkbox" id="check-3" name="achievements">
+                <span class="fieldset-achievements__checkbox"></span>
+                <span class="fieldset-achievements__discription">Видел Чака Норриса</span>
+              </label>
+            </li>
+            <li class="fieldset-achievements__item fieldset-achievements__item--achiev4">
+              <label class="fieldset-achievements__check">
+                <input class="fieldset-achievements__input" type="checkbox" id="check-4" name="achievements">
+                <span class="fieldset-achievements__checkbox"></span>
+                <span class="fieldset-achievements__discription">Накупил сувениров</span>
+              </label>
+            </li>
+            <li class="fieldset-achievements__item fieldset-achievements__item--achiev5">
+              <label class="fieldset-achievements__check">
+                <input class="fieldset-achievements__input" type="checkbox" id="check-5" name="achievements" checked>
+                <span class="fieldset-achievements__checkbox"></span>
+                <span class="fieldset-achievements__discription">Удержал башню</span>
+              </label>
+            </li>
+            <li class="fieldset-achievements__item fieldset-achievements__item--achiev6">
+              <label class="fieldset-achievements__check">
+                <input class="fieldset-achievements__input" type="checkbox" id="check-6" name="achievements">
+                <span class="fieldset-achievements__checkbox"></span>
+                <span class="fieldset-achievements__discription">Разгромил отель</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="fieldset-contacts">
+          <legend class="fieldset-contacts__title">Контактная информация</legend>
+          <div class="fieldset-contacts__desctop">
+            <label class="fieldset-contacts__item">
+              <span class="fieldset-contacts__icon fieldset-contacts__icon--number"></span>
+              <span class="fieldset-contacts__discripton">Номер телефона</span>
+              <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Номер, пожалуйста">
             </label>
-            <label class="fieldset-name__item">
-              <span class="fieldset-name__name">Имя:</span>
-              <input class="fieldset-name__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+            <label class="fieldset-contacts__item">
+              <span class="fieldset-contacts__icon fieldset-contacts__icon--mail"></span>
+              <span class="fieldset-contacts__discripton">Адрес почты</span>
+              <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Введите почту *" required>
             </label>
-            <label class="fieldset-name__item">
-              <span class="fieldset-name__name">Отчество:</span>
-              <input class="fieldset-name__input" type="text" name="surname" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset-apps">
+          <legend class="fieldset-apps__title">С каким приложением путешествовали?</legend>
+          <div class="fieldset-apps__container">
+            <label class="fieldset-apps__item">
+              <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-1" checked>
+              <span class="fieldset-apps__discription">Pink для iOS</span>
             </label>
-          </fieldset>
-        </div>
-        <div class="fieldset-achievements__wrapper">
-          <fieldset class="fieldset-achievements">
-            <legend class="fieldset-achievements__title">Ваши безбашенные<br>достижения в путешествии</legend>
-            <ul class="fieldset-achievements__list">
-              <li class="fieldset-achievements__item fieldset-achievements__item--achiev1">
-                <label class="fieldset-achievements__check">
-                  <input class="fieldset-achievements__input" type="checkbox" id="check-1" name="achievements" checked>
-                  <span class="fieldset-achievements__checkbox"></span>
-                  <span class="fieldset-achievements__discription">Сделал селфи с акулой</span>
-                </label>
-              </li>
-              <li class="fieldset-achievements__item fieldset-achievements__item--achiev2">
-                <label class="fieldset-achievements__check">
-                  <input class="fieldset-achievements__input" type="checkbox" id="check-2" name="achievements" checked>
-                  <span class="fieldset-achievements__checkbox"></span>
-                  <span class="fieldset-achievements__discription">Обгорел на пляже</span>
-                </label>
-              </li>
-              <li class="fieldset-achievements__item fieldset-achievements__item--achiev3">
-                <label class="fieldset-achievements__check">
-                  <input class="fieldset-achievements__input" type="checkbox" id="check-3" name="achievements">
-                  <span class="fieldset-achievements__checkbox"></span>
-                  <span class="fieldset-achievements__discription">Видел Чака Норриса</span>
-                </label>
-              </li>
-              <li class="fieldset-achievements__item fieldset-achievements__item--achiev4">
-                <label class="fieldset-achievements__check">
-                  <input class="fieldset-achievements__input" type="checkbox" id="check-4" name="achievements">
-                  <span class="fieldset-achievements__checkbox"></span>
-                  <span class="fieldset-achievements__discription">Накупил сувениров</span>
-                </label>
-              </li>
-              <li class="fieldset-achievements__item fieldset-achievements__item--achiev5">
-                <label class="fieldset-achievements__check">
-                  <input class="fieldset-achievements__input" type="checkbox" id="check-5" name="achievements" checked>
-                  <span class="fieldset-achievements__checkbox"></span>
-                  <span class="fieldset-achievements__discription">Удержал башню</span>
-                </label>
-              </li>
-              <li class="fieldset-achievements__item fieldset-achievements__item--achiev6">
-                <label class="fieldset-achievements__check">
-                  <input class="fieldset-achievements__input" type="checkbox" id="check-6" name="achievements">
-                  <span class="fieldset-achievements__checkbox"></span>
-                  <span class="fieldset-achievements__discription">Разгромил отель</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="page-wrapper fieldset-contacts__container">
-          <fieldset class="fieldset-contacts">
-            <legend class="fieldset-contacts__title">Контактная информация</legend>
-            <div class="fieldset-contacts__desctop">
-              <label class="fieldset-contacts__item">
-                <span class="fieldset-contacts__icon fieldset-contacts__icon--number"></span>
-                <span class="fieldset-contacts__discripton">Номер телефона</span>
-                <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Номер, пожалуйста">
-              </label>
-              <label class="fieldset-contacts__item">
-                <span class="fieldset-contacts__icon fieldset-contacts__icon--mail"></span>
-                <span class="fieldset-contacts__discripton">Адрес почты</span>
-                <input class="fieldset-contacts__input" type="text" name="cellphone-number" placeholder="Введите почту *" required>
-              </label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="fieldset-apps__wrapper">
-          <fieldset class="fieldset-apps">
-            <legend class="fieldset-apps__title">С каким приложением путешествовали?</legend>
-            <div class="fieldset-apps__container">
-              <label class="fieldset-apps__item">
-                <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-1" checked>
-                <span class="fieldset-apps__discription">Pink для iOS</span>
-              </label>
-              <label class="fieldset-apps__item">
-                <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-2">
-                <span class="fieldset-apps__discription">Pink на Android</span>
-              </label>
-              <label class="fieldset-apps__item">
-                <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-3">
-                <span c></span>
-                <span class="fieldset-apps__discription">Windows Phone</span>
-              </label>
-            </div>
-          </fieldset>
-        </div>
-      <div class="page-wrapper fieldset-review__container">
+            <label class="fieldset-apps__item">
+              <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-2">
+              <span class="fieldset-apps__discription">Pink на Android</span>
+            </label>
+            <label class="fieldset-apps__item">
+              <input class="fieldset-apps__input" type="radio" name="apps" id="apps_radio-3">
+              <span></span>
+              <span class="fieldset-apps__discription">Windows Phone</span>
+            </label>
+          </div>
+        </fieldset>
+
         <fieldset class="fieldset-review">
           <legend class="fieldset-review__title">Опишите свои эмоции</legend>
           <textarea class="fieldset-review__discription" placeholder="Можно прям в красках, не стесняясь в выражениях">
           </textarea>
         </fieldset>
+
         <div class="page-form__button-container">
           <button class="page-form__button" type="submit" name="send-form" value="Отправить форму">Отправить форму</button>
           <span class="page-form__required"><span class="page-form__required-star">*</span> — обязательные поля</span>
@@ -179,6 +177,7 @@
         </div>
       </div>
       </form>
+      </div>
     </main>
     <div class="page-wrapper"></div>
     <footer class="page-footer page-footer--index">
