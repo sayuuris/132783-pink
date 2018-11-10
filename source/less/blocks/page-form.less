@@ -1,10 +1,9 @@
 .page-form {
-  padding: 33px 0 30px;
   text-align: center;
 }
 
 .page-form__title {
-  margin: 50px 20px 55px;
+  padding: 47px 20px 0;
   text-align: center;
 }
 
@@ -19,9 +18,9 @@
 
 .page-form__button {
   box-sizing: border-box;
-  margin: 20px auto 20px;
+  margin: 49px auto 36px;
   width: 280px;
-  padding: 23px 0;
+  padding: 21px 0;
   border: none;
   color: #ffffff;
   background-color: #2aab6d;
@@ -30,6 +29,14 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0,3);
+  }
 }
 
 .page-form__required {
@@ -108,8 +115,7 @@
   .page-form__title {
     font-size: 18px;
     line-height: 30px;
-    width: 490px;
-    margin: 50px auto 55px;
+    padding: 90px 50px 36px;
   }
 
   .page-form__slogan--form {
@@ -119,12 +125,14 @@
   .page-form__button-container {
     display: flex;
     justify-content: space-between;
-    margin: 60px 20px 0;
+    margin: 60px 20px 55px;
     align-items: baseline;
+    order: 4;
   }
 
   .page-form__button {
     margin: 0;
+    width: 300px;
   }
 
   .page-form__popup {

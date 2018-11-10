@@ -1,7 +1,7 @@
 .fieldset-name {
-  margin: 0 0 42px;
   border: none;
-  padding: 0;
+  padding: 37px 0 22px;
+  margin: 0;
 }
 
 .fieldset-name__item {
@@ -12,11 +12,13 @@
 }
 
 .fieldset-name__name {
+  display: inline-block;
   color: #de6183;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1;
   text-transform: uppercase;
   margin-left: 23px;
+  margin-bottom: 12px;
 }
 
 .fieldset-name__input {
@@ -29,6 +31,17 @@
   padding: 15px 20px;
   border: 2px solid #e7e7e7;
   border-radius: 2px;
+
+  &:hover {
+    border: 2px solid #283645;
+    outline: none;
+  }
+
+  &:focus {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+
 }
 
 @media (min-width: 660px) {
@@ -40,6 +53,11 @@
     display: flex;
     align-items: center;
     width: 100%;
+    margin-bottom: 51px;
+  }
+
+  .fieldset-name {
+    padding: 37px 20px 0;
   }
 
   .fieldset-name__name {
