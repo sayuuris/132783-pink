@@ -19,7 +19,7 @@ gulp.task("css", function() {
         .pipe(gulp.dest("source/css"))
         .pipe(csso())
         .pipe(rename("style.min.css"))
-        .pipe(sourcemaps.write("../maps"))
+        .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("source/css"))
         .pipe(server.stream());
 });
